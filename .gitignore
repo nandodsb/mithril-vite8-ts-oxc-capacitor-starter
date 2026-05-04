@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+
+android
+dist
+package-lock.json
+gradle-8.14.3-all.zip
