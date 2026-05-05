@@ -12,7 +12,7 @@ const ToggleButton = ({ isOn }: ToggleProps) => {
 
   return (
     m('button', {class: isTurnedOn ? "btn btn-wide btn-accent" : 
-      'btn btn-wide btn-warning',
+      'btn btn-wide btn-error',
        onclick: () => setIsTurnedOn(current => !current)},
         isTurnedOn ? 'On' : 'Off') 
 )};
