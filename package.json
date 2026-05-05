@@ -6,7 +6,7 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "android": "npx cap run --live-reload --port 8100"
+    "android": "npx cap run --live-reload --port 5173"
   },
   "dependencies": {
     "@capacitor/android": "8.3.1",
