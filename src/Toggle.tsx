@@ -7,7 +7,7 @@ type ToggleProps = {
   isOn?: boolean;
 };
 
-export const Toggle = withHooks(({ isOn }: ToggleProps) => {
+const ToggleButton = ({ isOn }: ToggleProps) => {
   const [isTurnedOn, setIsTurnedOn] = useState<boolean>(false);
 
   return (
@@ -15,4 +15,6 @@ export const Toggle = withHooks(({ isOn }: ToggleProps) => {
       'btn btn-wide btn-error',
        onclick: () => setIsTurnedOn(current => !current)},
         isTurnedOn ? 'On' : 'Off') 
-)});
+)};
+
+export const Toggle = withHooks(ToggleButton)
