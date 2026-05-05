@@ -1,4 +1,5 @@
 import m from 'mithril';
+import { Dock } from './Dock';
 import { Toggle } from './Toggle';
 
 let count = 0;
@@ -30,7 +31,8 @@ export const App = () => {
                 onclick: function() {m.route.set('/home')}, class: 'btn btn-wide btn-secondary'
             }, "Home"),
 			m(Toggle,  { isOn: true })
-				]
+				],
+			m(Dock)
 			);
 		}
 	};

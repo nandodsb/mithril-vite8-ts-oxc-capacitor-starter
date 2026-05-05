@@ -6,7 +6,8 @@ export function Home () {
     	view: () => {
     		return <div className="flex justify-center items-center flex-col p-8">
 				<p className="text-teal-500 font-bold text-5xl p-2">Home</p>
-					{m(Carrousel)}					
+					{m(Carrousel)}	
+									
 			</div>
     	}       
 	}
