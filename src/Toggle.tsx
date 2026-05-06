@@ -7,14 +7,14 @@ type ToggleProps = {
   isOn?: boolean;
 };
 
-const ToggleButton = ( {isOn} : ToggleProps) => {
+const ToggleButton = ({ isOn }: ToggleProps) => {
   const [isTurnedOn, setIsTurnedOn] = useState<boolean>(false);
 
   return m(
     "button",
     {
       class: isTurnedOn ? "btn btn-wide btn-accent" : "btn btn-wide btn-error",
-      onclick: () => setIsTurnedOn((current) => !curent),
+      onclick: () => setIsTurnedOn((current) => !current),
     },
     isTurnedOn ? "On" : "Off",
   );
