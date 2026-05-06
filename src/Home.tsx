@@ -29,8 +29,11 @@ export function Home() {
                 <path d="M19 12H5" />
               </svg>
             </button>
-			 <p className="flex justify-between items-center text-teal-500 font-bold text-3xl py-4"> Home</p>
-		  </div>
+            <p className="flex justify-between items-center text-teal-500 font-bold text-3xl py-4">
+              {" "}
+              Home
+            </p>
+          </div>
           {m(Carrousel)}
         </div>
       );
