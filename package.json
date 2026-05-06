@@ -6,6 +6,7 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
+    "ready": "npm run build && npx cap sync && npm run dev",
     "android": "npx cap run --live-reload --port 5173"
   },
   "dependencies": {
@@ -16,7 +17,16 @@
     "@capacitor/ios": "^8.3.1",
     "@capacitor/keyboard": "^8.0.3",
     "@capacitor/status-bar": "^8.0.2",
+    "@lucide/astro": "^1.14.0",
+    "@tabler/icons": "^3.42.0",
+    "@tabler/icons-react": "^3.42.0",
     "@tailwindcss/vite": "^0.0.0-insiders.f3fdda2",
+    "lucide": "^1.14.0",
+    "lucide-preact": "^1.14.0",
+    "lucide-react": "^1.14.0",
+    "lucide-react-native": "^1.14.0",
+    "lucide-solid": "^1.14.0",
+    "lucide-static": "^1.14.0",
     "mithril": "^2.3.8",
     "mithril-hooks": "^0.7.2",
     "tailwindcss": "^4.2.4"

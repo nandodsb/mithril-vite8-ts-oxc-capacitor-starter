@@ -4,17 +4,12 @@ import { Toggle } from './Toggle';
 
 let count = 0;
 export const App = () => {
-	// return {
-	// 	view: () => {
-	// 		return <div>A</div>;
-	// 	}
-	// };
 	
 	return {
 		
 		view: () => {			
 			return m(
-				'div',
+				'main',
 				{
 					class: 'flex justify-center items-center flex-col gap-2'
 				},
@@ -32,7 +27,8 @@ export const App = () => {
             }, "Home"),
 			m(Toggle,  { isOn: true })
 				],
-			m(Dock)
+			m(Dock),
+			
 			);
 		}
 	};
