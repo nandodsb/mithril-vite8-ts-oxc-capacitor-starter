@@ -5,7 +5,7 @@ export function Dock() {
   return {
     view: () => {
       return (
-        <div class="dock bg-base-200 p-2 gap-2 flex justify-evenly items-center">
+        <div class="dock dock-sm bg-base-200 p-1 gap-1 flex justify-evenly items-center">
           <button
             class="btn btn-sm h-full  btn-accent"
             onclick={() => {
