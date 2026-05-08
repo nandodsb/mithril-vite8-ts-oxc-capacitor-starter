@@ -5,8 +5,8 @@ export function Home() {
   return {
     view: () => {
       return (
-        <div className="flex justify-center items-center flex-col">
-          <div className="flex  justify-evenly items-center text-teal-500">
+        <section className="flex justify-center items-center flex-col">
+          <div className="grid grid-cols-2 justify-center  text-teal-500">
             <button
               class=" hover:text-teal-500/50"
               onclick={() => {
@@ -29,13 +29,11 @@ export function Home() {
                 <path d="M19 12H5" />
               </svg>
             </button>
-            <p className="flex justify-between items-center text-teal-500 font-bold text-3xl py-4">
-              {" "}
-              Home
-            </p>
+            <p className="text-teal-500 font-bold text-3xl py-4">Home</p>
           </div>
+          <p className="text-teal-500 font-bold text-3xl py-4">It is not hyperscript, but JSX.</p>
           {m(Carrousel)}
-        </div>
+        </section>
       );
     },
   };
